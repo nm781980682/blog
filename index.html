@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="login">
+		<form action="123" method="get">
+			<div class="username">
+			<label for="username">姓名: </label>
+			<input id="username" type="text" name="username" placeholder="请输入姓名">
+		</div>
+		<div class="password">
+			<label for="password">密码: </label>
+			<input id="password" type="password" name="password" placeholder="请输入密码">
+		</div>
+        <div class="sex">
+        	<label for="">性别: </label>
+        	<input type="radio" name="sex" value="男">男
+        	<input type="radio" name="sex" value="女">女
+        </div>
+        <div class="qx">
+        	<label for="">取向: </label>
+        	<input type="radio" name="qx" value="男">男
+        	<input type="radio" name="qx" value="女">女
+        </div>
+        <div class="hobby">
+        	<label for="">爱好</label>
+        	<input type="checkbox" name="hobby" value="dota">dota
+        	<input type="checkbox" name="hobby" value="ly">旅游
+        	<input type="checkbox" name="hobby" value="cw">宠物
+        </div>
+        <div class="textarea">
+        	<div>评论: <textarea placeholder="ddd" name="article" id="" cols="30" rows="10"></textarea>
+        		<input type="hidden" name="csrf" value="1618464153" ></div>
+        </div>
+        <div class="select">
+        	<div>我的老婆: 
+        	<select name="laopuo" id="">
+        		<option value="">新恒结衣</option>
+        		<option value="">高圆圆</option>
+        		<option value="">黛博拉</option>
+        	</select>
+        	</div>
+        </div>
+        <div class="submit">
+        	<button>提交</button>
+        </div>
+		</form>
+		
+	</div>
+</body>
+</html>
