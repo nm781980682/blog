@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.clearfix:after{
+        content:"";
+        display:block;
+        clear:left;
+    }
+	.aside {
+     	width: 200px;
+     	height: 400px;
+     	background: red;
+     	float: left; 
+     }
+     .menu {
+     	width: 200px;
+     	height: 400px;
+     	background: blue;
+     	float: right; 
+     }
+     .main {
+     	margin-left: 205px;
+        background: blue;
+        height: 450px;
+     }
+     .main1 {
+     	margin-left: 205px;
+     	margin-right: 205px;
+        background: pink;
+        height: 450px;
+     }
+     .topw {
+     	margin-top: 10px; 
+     }
+     .zy3 {
+     	position:relative;
+     	height: 300px;
+     	background: #ccc;
+     	margin-top: 10px;
+     }
+     .zye3 {
+     	position: absolute;
+     	width: 300px;
+     	height: 200px;
+     	background: red;
+     	margin-top: 10px;
+     	left: 50%;
+     	margin-left: -150px;
+     }
+     .zy4 {
+        background: #ccc;
+     	margin-top: 10px;
+     	text-align:center;
+     }
+     .zy4 div {
+        padding: 40px 0;	
+     }
+     .button {
+        background: red;
+        padding: 4px 3px;
+        font-size: 12px;
+        text-decoration: none;
+        border-radius: 3px;
+        color: #fff;
+        display: inline-block; 
+    }
+    .zy5 {
+    	margin-top: 10px;
+        padding: 30px 0;
+        background: #ccc;
+        text-align: center;
+    }
+    .zy6 {
+     	left: 840px;
+     	top: 5px;
+     	background-color: #ccc;
+        position: relative;
+        height: 180px;
+     	width: 180px;
+     	border: 2px solid red;
+     	display: table-cell;
+     	vertical-align: middle;
+     	text-align: center;
+     }
+     .zy7{
+     	background-color: red;
+     	width: 200px;
+     	height: 200px;
+     	position: absolute;
+     	top: 50%;
+     	left: 50%;
+     	transform: translate(-50%, -50%);
+     }
+     
+     .hh {
+     	background-color: pink;
+     	display:inline;
+     }
+     .zy8 {
+     	float: left;
+     	font-size: 50px;
+     	display:inline;
+     	background-color: rgba(255,255,255,0.6);
+     	position: absolute;
+     	top: 50%;
+     	left: 50%;
+     	transform: translate(-50%, -50%);
+     }
+    </style>
+</head>
+<body>
+	<div class="clearfix">
+		<div class="aside"></div>
+		<div class="main"></div>
+	</div>
+	<div class="topw clearfix">
+		<div class="menu"></div>
+		<div class="aside"></div>
+		<div class="main1"></div>
+	</div>
+	<div class="zy3">
+		<div class="zye3"></div>
+	</div>
+	<div class="zy4">
+		<div>
+		<h1>这是标题</h1>
+		<h2>这是内容,这段文字在当前区块内垂直水平居中</h2>
+		</div>
+	</div>
+	<div class="zy5">
+		<a href="#" class="button">按钮1</a>
+		<a href="#" class="button">按钮2</a>
+		<a href="#" class="button">按钮3</a>
+	</div>
+	<div class="zy6">
+		
+			<img src="year2_down.png" alt="" width="200px" height="150px">
+		
+	</div>
+	<div class="zy7">
+		固定宽高的块
+	</div>
+	<div class="zy8">
+		不固定宽高的块
+	</div>
+
+</body>
+</html>
