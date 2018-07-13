@@ -5,39 +5,33 @@ function $$(selector){
   return document.querySelectorAll(selector)
 }
 
-
-$$('.modal .login').forEach(function(node){
-  node.onclick = function(){
-    $('.flip-modal').classList.remove('register')
-    $('.flip-modal').classList.add('login')
-  }      
-})
-$$('.modal .register').forEach(function(node){
-  node.onclick = function(){
-    $('.flip-modal').classList.remove('login')
-    $('.flip-modal').classList.add('register')
-  }      
-})
-$(".close").onclick = function(){
-  $('.flip-modal').classList.remove('show')
-}
-
-$(".flip-modal").onclick=function(e){
-    e.stopPropagation()
-}
-
 $('header .login').onclick = function(e){
   e.stopPropagation()
-  $('.flip-modal').classList.add('show')
+  $('.flip-modal').style.display = 'block'
 }
 
 
 
-
-document.onclick = function(){
-  $('.flip-modal').classList.remove('show')
-}
-
+$('.flip-modal').addEventListener('click', function(e){
+  e.stopPropagation()
+  if(e.target.classList.contains('login')){
+    $('.flip-modal').classList.remove('register')
+    $('.flip-modal').classList.add('login') 
+  }
+  if(e.target.classList.contains('register')){
+    $('.flip-modal').classList.add('register')
+    $('.flip-modal').classList.remove('login') 
+  }
+  console.log(e.target)
+  console.log(this)
+  window.target = e.target
+  if(e.target.classList.contains('close')){
+    $('.flip-modal').style.display = 'none'
+  }
+})
+document.addEventListener('click', function(){
+  $('.flip-modal').style.display = 'none'
+})
 
 $('.modal-login form').addEventListener('submit', function(e){
   e.preventDefault()
