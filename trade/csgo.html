@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>菠菜首页</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.slim.min.js"></script>
+	<link rel="stylesheet" href="normalize1.css">
+	<link rel="stylesheet" href="csgo1.css">
+</head>
+
+<body>
+	<header>
+		<div class="tlht">
+			<div class="w">
+				<ul class="fl">
+					<li>
+						<a href="#">TWeet</a>
+					</li>
+				</ul>
+				<ul class="fr asd">
+					<li>Choose language:
+						<a href="#"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="pac">
+				<ul class="jrwm">
+					<li>加入我们:
+
+						<a href="#" class="jrwm1"><img width="24" height="24" src="tupian/fsbk.png" alt=""></a>
+						<a href="#" class="jrwm1"><img width="24" height="24" src="tupian/steam.png" alt=""></a>
+						<a href="#" class="jrwm1"><img width="24" height="24" src="tupian/twt.png" alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="w bgc">
+		<div class="bgt">
+			<div class="logo">
+				<a href="#">
+					<img src="tupian/logo.png" width="336" height="113" alt="">
+				</a>
+			</div>
+			<div class="bgh">
+				<menu>
+					<li><a href="#"><span class="jkl"><span class="juo">fights</span></span></a></li>
+					<li><a href="#"><span class="jka"><span class="jui">topdrop</span></span></a></li>
+					<li><a href="#"><span class="jks"><span class="jui">抽奖活动</span></span></a></li>
+					<li><a href="#"><span class="jkd"><span class="jui">合作伙伴</span></span></a></li>
+					<li><a href="#"><span class="jkf"><span class="jui">每日奖励</span></span></a></li>
+					<li><a href="#"><span class="jkg"><span class="juj">请登录<br>STEAM</span></span></a></li>
+				</menu>
+			</div>
+		</div>
+		<section class="stat">
+			<h1 class="ikm">
+				<div class="uio">
+					总计开了: 456123
+				</div>
+			</h1>
+			<div class="nui">
+				<div class="qwe">
+					<div class="rty">KNIVES</div>
+					<div class="tyu">478 416</div>
+				</div>
+				<div class="qwe">
+					<div class="rty qw">COVERT</div>
+					<div class="tyu 13">3 061 606</div>
+				</div>
+				<div class="qwe">
+					<div class="rty qe">CLASSIFIED</div>
+					<div class="tyu">3 149 659</div>
+				</div>
+				<div class="qwe">
+					<div class="rty qr">RESTRICTED</div>
+					<div class="tyu">8 069 610</div>
+				</div>
+				<div class="qwe">
+					<div class="rty qt">MIL-SPEC</div>
+					<div class="tyu">12 165 013</div>
+				</div>
+				<div class="qwe">
+					<div class="rty qy">STATTRAK™</div>
+					<div class="tyu">1 230 859</div>
+				</div>
+
+			</div>
+		</section>
+
+	</div>
+	<div class="layout">
+		<ul class="prod-ct clearfix">
+			<li class="prod">
+				<div class="cover"><a class="btn  action-delete" href="">删除</a></div>
+				<a href="#">
+					<img src="tupian/lgx.png" alt="">
+					<div class="prod-name">宝箱一个</div>
+					<div class="prod-price">￥1699.00</div>
+				</a>
+			</li>
+			<li class="prod">
+				<div class="cover"><a class="btn  action-delete" href="">删除</a></div>
+				<a href="#">
+					<img src="tupian/lzx.png" alt="">
+					<div class="prod-name">宝箱一个</div>
+					<div class="prod-price">￥1699.00</div>
+				</a>
+			</li>
+			<li class="prod">
+				<div class="cover"><a class="btn  action-delete" href="">删除</a></div>
+				<a href="#">
+					<img src="tupian/pkq.png" alt="">
+					<div class="prod-name">宝箱一个</div>
+					<div class="prod-price">￥1699.00</div>
+				</a>
+			</li>
+			<li class="prod">
+				<div class="cover"><a class="btn  action-delete" href="">删除</a></div>
+				<a href="#">
+					<img src="tupian/m9dlsx.png" alt="">
+					<div class="prod-name">宝箱一个</div>
+					<div class="prod-price">￥1699.00</div>
+				</a>
+			</li>
+			<li class="prod">
+				<div class="cover"><a class="btn  action-delete" href="">删除</a></div>
+				<a href="#">
+					<img src="tupian/jbs.png" alt="">
+					<div class="prod-name">宝箱一个</div>
+					<div class="prod-price">￥1699.00</div>
+				</a>
+			</li>
+			<li class="prod">
+				<div class="cover"><a class="btn  action-delete" href="">删除</a></div>
+				<a href="#">
+					<img src="tupian/xmz.png" alt="">
+					<div class="prod-name">宝箱一个</div>
+					<div class="prod-price">￥1699.00</div>
+				</a>
+			</li>
+
+		</ul>
+
+
+		<a href="#" class="btn btn-add">添加</a><a href="#" class="btn btn-edit">编辑</a>
+	</div>
+	<script>
+
+
+		function getProdHtml(prod) {
+			var html = '';
+			html += '<li class="prod">';
+			html += '<div class="cover"><a class="btn action-delete" href="#">删除</a></div>'
+			html += '<a href="#">'
+			html += '<img src="' + prod.img + '" alt="">'
+			html += '<div class="prod-name">' + prod.name + '</div>'
+			html += '<div class="prod-price">' + prod.price + '</div>'
+			html += '</a>'
+			html += '</li>';
+			return html;
+		}
+
+		function getData() {
+			var results = []
+			for (var i = 0; i < 6; i++) {
+				var rand = Math.floor(Math.random() * 10000)
+				var product = {
+					img: 'tupian/ajpx.png',
+					name: '暗金咆哮',
+					price: '￥' + rand
+				}
+				results.push(product)
+			}
+
+			return results
+		}
+
+		$('.btn-add').on('click', function (e) {
+			e.preventDefault();
+			$('.prod').removeClass('hover')
+			var products = getData()
+			$.each(products, function (idx, prod) {
+				var html = getProdHtml(prod)
+				$('.prod-ct').append(html)
+			})
+		})
+
+
+		$('.btn-edit').on('click', function (e) {
+			e.preventDefault();
+			$('.prod').toggleClass('hover')
+		})
+
+		$('.prod-ct').on('click', '.action-delete', function (e) {
+			e.preventDefault()
+			$(this).parents('.prod').remove()
+		})
+
+
+	</script>
+
+</body>
+
+
+</html>
