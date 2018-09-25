@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .clearfix:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .tab {
+      width: 420px;
+      margin: 50px auto;
+      border: 1px solid #ff9924;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .tab-header {
+      border-bottom: 1px solid #979797;
+    }
+
+    .tab-header>li {
+      float: left;
+      color: #6e55ff;
+      border-top: 1px solid #979797;
+      border-left: 1px solid #979797;
+      border-right: 1px solid #979797;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .tab-header .active {
+      color: #13ff62;
+
+    }
+
+    .tab-container {
+      padding: 20px;
+    }
+
+    .tab-container>li {
+      display: none;
+    }
+
+    .tab-container>.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tab">
+    <ul class="tab-header clearfix">
+      <li class="active">标题1</li>
+      <li>标题2</li>
+
+    </ul>
+    <ul class="tab-container">
+      <li class="active">内容1</li>
+      <li>内容2</li>
+
+    </ul>
+  </div>
+
+  <div class="tab">
+    <ul class="tab-header clearfix">
+      <li class="active">标题1</li>
+      <li>标题2</li>
+      <li>标题3</li>
+    </ul>
+    <ul class="tab-container">
+      <li class="active">内容1</li>
+      <li>内容2</li>
+      <li>内容3</li>
+    </ul>
+  </div>
+  <div class="tab">
+    <ul class="tab-header clearfix">
+      <li class="active">标题1</li>
+      <li>标题2</li>
+      <li>标题3</li>
+      <li>标题4</li>
+    </ul>
+    <ul class="tab-container">
+      <li class="active">内容1</li>
+      <li>内容2</li>
+      <li>内容3</li>
+      <li>内容4</li>
+    </ul>
+  </div>
+
+
+  <script src="tab.js"></script>
+</body>
+
+</html>
