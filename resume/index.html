@@ -1,304 +1,309 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="zh-cn">
 
 <head>
-	<title>倪明的简历</title>
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>倪明的简历</title>
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 
-	<script src="js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
 
-	<link href="css/style.css" rel='stylesheet' type='text/css' />
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
 
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 700);
-			});
-		});
-	</script>
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 700);
+      });
+    });
+  </script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  </script>
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
-	 rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
 
-	<script>
-		$(function () {
-			var pull = $('#pull');
-			menu = $('nav ul');
-			menuHeight = menu.height();
-			$(pull).on('click', function (e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-			$(window).resize(function () {
-				var w = $(window).width();
-				if (w > 320 && menu.is(':hidden')) {
-					menu.removeAttr('style');
-				}
-			});
-		});
-	</script>
-
+  <script>
+    $(function () {
+      var pull = $('#pull');
+      menu = $('nav ul');
+      menuHeight = menu.height();
+      $(pull).on('click', function (e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+      $(window).resize(function () {
+        var w = $(window).width();
+        if (w > 320 && menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+      });
+    });
+  </script>
 </head>
 
 <body>
 
-	<div id="home" class="header">
-		<div class="top-header">
-			<div class="container">
-				<div class="logo">
-					<a href="#">resume</a>
-				</div>
+  <body>
 
-				<nav class="top-nav">
-					<ul class="top-nav">
-						<li class="active"><a href="#home" class="scroll">Home </a></li>
-						<li class="page-scroll"><a href="#work" class="scroll">Works</a></li>
-						<li class="page-scroll"><a href="#team" class="scroll">record</a></li>
-					</ul>
-					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-				</nav>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
+    <div id="home" class="header">
+      <div class="top-header">
+        <div class="container">
+          <div class="logo">
+            <a href="#">resume</a>
+          </div>
 
-	<div class="banner text-center">
-		<div class="container">
-			<div class="banner-info">
-				<h1><span>hello</span> 我叫倪明,一名预备前端开发</h1>
-				<p>您好，我叫倪明，坐标昆山。 我并不是计算机专业,但对前端很感兴趣，所以自学前端，今后的职业规划是朝着全栈发展, 能做一些粗糙的设计.</p>
-				<label class="page-scroll"><a class="big-btn scroll" href="#work1"><span> </span></a></label>
-			</div>
-		</div>
-	</div>
+          <nav class="top-nav">
+            <ul class="top-nav">
+              <li class="active"><a href="#home" class="scroll">Home </a></li>
+              <li class="page-scroll"><a href="#work" class="scroll">Works</a></li>
+              <li class="page-scroll"><a href="#team" class="scroll">record</a></li>
+            </ul>
+            <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+          </nav>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
 
-	<div id="work" class="work">
-		<div id="work1" class="container">
-			<div class="head-one text-center">
-				<h2>works</h2>
-				<span> </span>
-				<p>下面是一堆传送门</p>
-			</div>
+    <div class="banner text-center">
+      <div class="container">
+        <div class="banner-info">
+          <h1><span>hello</span> 我叫倪明,一名预备前端开发</h1>
+          <p>您好，我叫倪明，坐标昆山。 我并不是计算机专业,但对前端很感兴趣，所以自学前端，今后的职业规划是朝着全栈发展, 能做一些粗糙的设计.</p>
+          <label class="page-scroll"><a class="big-btn scroll" href="#work1"><span> </span></a></label>
+        </div>
+      </div>
+    </div>
 
-			<script src="js/jquery.hoverGrid.js"></script>
-			<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
-			<script type="text/javascript">
-				$(document).ready(function () {
-					$('#whatever').hoverGrid();
-				});
-			</script>
+    <div id="work" class="work">
+      <div id="work1" class="container">
+        <div class="head-one text-center">
+          <h2>works</h2>
+          <span> </span>
+          <p>下面是一堆传送门</p>
+        </div>
 
-			<div class="works">
-				<div id="whatever">
-					<div class="col-md-4 work-grid">
-						<div class="item">
-							<img width="404px" height="230px" src="images/w1.jpg" title="name" />
-							<a target="_blank" href="https://nm781980682.github.io/blog/jind1/index.html">
-								<div class="caption" style="display: none;">
-									<h2>第一个静态页面</h2>
-									<p>一个缩水版的京东首页</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 work-grid">
-						<div class="item">
-							<img width="404px" height="230px" src="images/w2.jpg" title="name" />
-							<a target="_blank" href="https://nm781980682.github.io/blog/index/csgo.html">
-								<div class="caption" style="display: none;">
-									<h2>第二个静态页面</h2>
-									<p>一个缩水版的csgo菠菜首页</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 work-grid">
-						<div class="item">
-							<img width="404px" height="230px" src="images/w3.jpg" title="name" />
-							<a target="_blank" href="https://nm781980682.github.io/blog/zye801.html">
-								<div class="caption" style="display: none;">
-									<h2>css布局</h2>
-									<p>一次对于css布局的练习</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 work-grid">
-						<div class="item">
-							<img width="404px" height="230px" src="images/w4.gif" title="name" />
-							<a target="_blank" href="https://nm781980682.github.io/blog/Bootstrap/index.html">
-								<div class="caption" style="display: none;">
-									<h2>Bootstrap</h2>
-									<p>用Bootstrap做一丢丢复杂的新闻站</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 work-grid">
-						<div class="item">
-							<img width="404px" height="230px" src="images/w5.gif" title="name" />
-							<a target="_blank" href="http://yisen-wh.com/m_task">
-								<div class="caption" style="display: none;">
-									<h2>JS第一次</h2>
-									<p>做一个登录注册界面</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 work-grid">
-						<div class="item">
-							<img width="404px" height="230px" src="images/w6.jpg" title="name" />
-							<a target="_blank" href="https://nm781980682.github.io/blog/musicPlayer/index.html">
-								<div class="caption" style="display: none;">
-									<h2>JS第二次</h2>
-									<p>做一个简单的音乐播放器</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 work-grid">
-						<div class="item">
-							<img width="404px" height="230px" src="images/w7.png" title="name" />
-							<a target="_blank" href="https://nm781980682.github.io/blog/douban/index.html">
-								<div class="caption" style="display: none;">
-									<h2>JS第三次</h2>
-									<p>做一个豆瓣电影排行榜,适配移动端</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 work-grid">
-						<div class="item">
-							<img width="404px" height="230px" src="images/w8.jpg" title="name" />
-							<a target="_blank" href="https://nm781980682.github.io/blog/HM/index.html">
-								<div class="caption" style="display: none;">
-									<h2>JS第四次</h2>
-									<p>做一个适应屏幕的随机点歌台</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 work-grid">
-						<div class="item">
-							<img width="404px" height="230px" src="images/w9.jpg" title="name" />
-							<a target="_blank" href="https://github.com/nm781980682/blog">
-								<div class="caption" style="display: none;">
-									<h2>githup</h2>
-									<p>githup的传送门</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
+        <script src="js/jquery.hoverGrid.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $('#whatever').hoverGrid();
+          });
+        </script>
 
-	<div id="team" class="team">
-		<div class="container">
-			<div class="head-one text-center team-head">
-				<h2>record</h2>
-				<span> </span>
-				<p>简单介绍一下我的基本信息</p>
-			</div>
-			<!----team-members---->
-			<div class="team-members">
-				<div class="col-md-3">
-					<div class="team-member text-center">
-						<h3>基本信息</h3>
-						<span class="record">倪明
-							<br>
-							<br>
-							男 1995.05.15
-							<br>
-							<br>
-							湖北省老河口市
-						</span>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="team-member text-center">
-						<h3>毕业院校</h3>
-						<span class="record">苏州托普信息技术学院
-							<br>
-							<br>
-							专业: 机械制造与自动化
-							<br>
-							<br>
-							在校时间: 2014.09-2017.06
-						</span>
+        <div class="works">
+          <div id="whatever">
+            <div class="col-md-4 work-grid">
+              <div class="item">
+                <img width="404px" height="230px" src="images/w1.jpg" title="name" />
+                <a target="_blank" href="https://nm781980682.github.io/blog/jind1/index.html">
+                  <div class="caption" style="display: none;">
+                    <h2>第一个静态页面</h2>
+                    <p>一个缩水版的京东首页</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 work-grid">
+              <div class="item">
+                <img width="404px" height="230px" src="images/w2.jpg" title="name" />
+                <a target="_blank" href="https://nm781980682.github.io/blog/index/csgo.html">
+                  <div class="caption" style="display: none;">
+                    <h2>第二个静态页面</h2>
+                    <p>一个缩水版的csgo菠菜首页</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 work-grid">
+              <div class="item">
+                <img width="404px" height="230px" src="images/w3.jpg" title="name" />
+                <a target="_blank" href="https://nm781980682.github.io/blog/zye801.html">
+                  <div class="caption" style="display: none;">
+                    <h2>css布局</h2>
+                    <p>一次对于css布局的练习</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 work-grid">
+              <div class="item">
+                <img width="404px" height="230px" src="images/w4.gif" title="name" />
+                <a target="_blank" href="https://nm781980682.github.io/blog/Bootstrap/index.html">
+                  <div class="caption" style="display: none;">
+                    <h2>Bootstrap</h2>
+                    <p>用Bootstrap做一丢丢复杂的新闻站</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 work-grid">
+              <div class="item">
+                <img width="404px" height="230px" src="images/w5.gif" title="name" />
+                <a target="_blank" href="http://yisen-wh.com/m_task">
+                  <div class="caption" style="display: none;">
+                    <h2>JS第一次</h2>
+                    <p>做一个登录注册界面</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 work-grid">
+              <div class="item">
+                <img width="404px" height="230px" src="images/w6.jpg" title="name" />
+                <a target="_blank" href="https://nm781980682.github.io/blog/musicPlayer/index.html">
+                  <div class="caption" style="display: none;">
+                    <h2>JS第二次</h2>
+                    <p>做一个简单的音乐播放器</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 work-grid">
+              <div class="item">
+                <img width="404px" height="230px" src="images/w7.png" title="name" />
+                <a target="_blank" href="https://nm781980682.github.io/blog/douban/index.html">
+                  <div class="caption" style="display: none;">
+                    <h2>JS第三次</h2>
+                    <p>做一个豆瓣电影排行榜,适配移动端</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 work-grid">
+              <div class="item">
+                <img width="404px" height="230px" src="images/w8.jpg" title="name" />
+                <a target="_blank" href="https://nm781980682.github.io/blog/HM/index.html">
+                  <div class="caption" style="display: none;">
+                    <h2>JS第四次</h2>
+                    <p>做一个适应屏幕的随机点歌台</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 work-grid">
+              <div class="item">
+                <img width="404px" height="230px" src="images/w9.jpg" title="name" />
+                <a target="_blank" href="https://github.com/nm781980682/blog">
+                  <div class="caption" style="display: none;">
+                    <h2>githup</h2>
+                    <p>githup的传送门</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
 
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="team-member text-center">
+    <div id="team" class="team">
+      <div class="container">
+        <div class="head-one text-center team-head">
+          <h2>record</h2>
+          <span> </span>
+          <p>简单介绍一下我的基本信息</p>
+        </div>
+        <!----team-members---->
+        <div class="team-members">
+          <div class="col-md-3">
+            <div class="team-member text-center">
+              <h3>基本信息</h3>
+              <span class="record">倪明
+                <br>
+                <br>
+                男 1995.05.15
+                <br>
+                <br>
+                湖北省老河口市
+              </span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member text-center">
+              <h3>毕业院校</h3>
+              <span class="record">苏州托普信息技术学院
+                <br>
+                <br>
+                专业: 机械制造与自动化
+                <br>
+                <br>
+                在校时间: 2014.09-2017.06
+              </span>
 
-						<h3>工作经历</h3>
-						<span class="record">博古特机电设备有限公司
-							<br>
-							<br>
-							电气控制
-							<br>
-							<br>
-							起止时间: 2017.06-2018.06
-						</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member text-center">
 
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="team-member text-center">
+              <h3>工作经历</h3>
+              <span class="record">博古特机电设备有限公司
+                <br>
+                <br>
+                电气控制
+                <br>
+                <br>
+                起止时间: 2017.06-2018.06
+              </span>
 
-						<h3>联系方式</h3>
-						<span class="record">TEL: 15250288150
-							<br>
-							<br>
-							邮箱: 781980682@qq.com
-							<br>
-							QQ: 781980680
-							<br>
-							微信: mm781980682
-						</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member text-center">
 
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+              <h3>联系方式</h3>
+              <span class="record">TEL: 15250288150
+                <br>
+                <br>
+                邮箱: 781980682@qq.com
+                <br>
+                QQ: 781980680
+                <br>
+                微信: mm781980682
+              </span>
 
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="footer-left">
-				<p><span>京ICP证070359号:</span> 互联网药品信息服务资格证编号(京)-经营性-2014-0008.</p>
-			</div>
-			<div class="footer-right">
-				<p>互联网出版许可证编号新出网证(京)字150号</p>
-				<script type="text/javascript">
-					$(document).ready(function () {
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
 
-						$().UItoTop({ easingType: 'easeOutQuart' });
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-left">
+          <p><span>京ICP证070359号:</span> 互联网药品信息服务资格证编号(京)-经营性-2014-0008.</p>
+        </div>
+        <div class="footer-right">
+          <p>互联网出版许可证编号新出网证(京)字150号</p>
+          <script type="text/javascript">
+            $(document).ready(function () {
 
-					});
-				</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
+              $().UItoTop({ easingType: 'easeOutQuart' });
 
-	</div>
-	</div>
+            });
+          </script>
+          <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
 
+    </div>
+    </div>
+
+  </body>
 </body>
 
 </html>
